@@ -12,7 +12,7 @@
     }
     public override string ToString()
     {
-        return $"Name: {Name}, Year: {ProductionYear}, MaxSpeed: {MaxSpeed}";
+        return $"{Name}, {ProductionYear}, {MaxSpeed}";
     }
 }
 
@@ -52,9 +52,9 @@ class Program
     {
         Car[] cars =
         [
-            new Car("Tesla", 2020, 250),
-            new Car("Ford", 2015, 200),
-            new Car("BMW", 2018, 240),
+            new Car("Mazda", 2020, 250),
+            new Car("lada", 2015, 180),
+            new Car("bmw", 2018, 240),
             new Car("Audi", 2022, 260)
         ];
 
@@ -63,12 +63,12 @@ class Program
         foreach (var car in cars)
             Console.WriteLine(car);
 
-        Console.WriteLine("\nSorting by Production Year:");
+        Console.WriteLine("Sorting by year:");
         Array.Sort(cars, new CarComparer("year"));
         foreach (var car in cars)
             Console.WriteLine(car);
 
-        Console.WriteLine("\nSorting by Max Speed:");
+        Console.WriteLine("Sorting by speed:");
         Array.Sort(cars, new CarComparer("speed"));
         foreach (var car in cars)
             Console.WriteLine(car);

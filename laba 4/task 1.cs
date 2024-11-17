@@ -171,20 +171,19 @@ class program
 
         matrix1.Print();
 
-
-        Console.WriteLine("\nМатрица 2:");
+        Console.WriteLine("Матрица 2:");
         matrix2.Print();
 
         MyMatrix sumMatrix = matrix1 + matrix2;
-        Console.WriteLine("\nСумма матриц:");
+        Console.WriteLine("Сумма матриц:");
         sumMatrix.Print();
 
         MyMatrix multipliedMatrix = matrix1 * 2;
-        Console.WriteLine("\nМатрица 1, умноженная на 2:");
+        Console.WriteLine("Матрица 1, умноженная на 2:");
         multipliedMatrix.Print();
 
         MyMatrix productMatrix = matrix1 * matrix2;
-        Console.WriteLine("\nПроизведение матриц:");
+        Console.WriteLine("Произведение матриц:");
         productMatrix.Print();
 
 
